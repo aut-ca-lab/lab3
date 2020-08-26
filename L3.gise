@@ -29,6 +29,9 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rc_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rc_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rc_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="tff.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="tff.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="tff.ngc"/>
@@ -37,10 +40,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="tff.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="tff.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="tff.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tff_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="tff_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tff_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tff_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tff_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tff_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tff_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="tff_xst.xrpt"/>
@@ -53,19 +55,21 @@
     <transform xil_pn:end_ts="1598469871" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1598469871">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598472305" xil_pn:in_ck="-5630814616390695908" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1598472305">
+    <transform xil_pn:end_ts="1598476561" xil_pn:in_ck="1143718027622166826" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1598476561">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="src/dff.vhd"/>
+      <outfile xil_pn:name="src/ripple_counter.vhd"/>
       <outfile xil_pn:name="src/tff.vhd"/>
       <outfile xil_pn:name="tests/dff_tb.vhd"/>
+      <outfile xil_pn:name="tests/rc_tb.vhd"/>
       <outfile xil_pn:name="tests/tff_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1598471860" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8518292043290423563" xil_pn:start_ts="1598471860">
+    <transform xil_pn:end_ts="1598476372" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7343513449604031904" xil_pn:start_ts="1598476372">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598471860" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5783184994618330391" xil_pn:start_ts="1598471860">
+    <transform xil_pn:end_ts="1598476372" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7144385498445568212" xil_pn:start_ts="1598476372">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -73,30 +77,32 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598472305" xil_pn:in_ck="-5630814616390695908" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1598472305">
+    <transform xil_pn:end_ts="1598476561" xil_pn:in_ck="1143718027622166826" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1598476561">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="src/dff.vhd"/>
+      <outfile xil_pn:name="src/ripple_counter.vhd"/>
       <outfile xil_pn:name="src/tff.vhd"/>
       <outfile xil_pn:name="tests/dff_tb.vhd"/>
+      <outfile xil_pn:name="tests/rc_tb.vhd"/>
       <outfile xil_pn:name="tests/tff_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1598472307" xil_pn:in_ck="-5630814616390695908" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2781647107970637757" xil_pn:start_ts="1598472305">
+    <transform xil_pn:end_ts="1598476563" xil_pn:in_ck="1143718027622166826" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6397362788408304153" xil_pn:start_ts="1598476561">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tff_tb_beh.prj"/>
-      <outfile xil_pn:name="tff_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="rc_tb_beh.prj"/>
+      <outfile xil_pn:name="rc_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1598472307" xil_pn:in_ck="4410921777729193144" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1808258287591174410" xil_pn:start_ts="1598472307">
+    <transform xil_pn:end_ts="1598476563" xil_pn:in_ck="-6718609534017629056" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8447018563923950132" xil_pn:start_ts="1598476563">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tff_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="rc_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1598471904" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1598471904">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -128,8 +134,12 @@
     <transform xil_pn:end_ts="1598471911" xil_pn:in_ck="-6403839104737448162" xil_pn:name="TRANEXT_xstsynthesize_virtex4" xil_pn:prop_ck="-7673974733947317973" xil_pn:start_ts="1598471904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="tff.lso"/>
       <outfile xil_pn:name="tff.ngc"/>
@@ -138,7 +148,6 @@
       <outfile xil_pn:name="tff.stx"/>
       <outfile xil_pn:name="tff.syr"/>
       <outfile xil_pn:name="tff.xst"/>
-      <outfile xil_pn:name="tff_tb_beh.prj"/>
       <outfile xil_pn:name="tff_vhdl.prj"/>
       <outfile xil_pn:name="tff_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

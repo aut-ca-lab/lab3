@@ -33,7 +33,8 @@ entity tff is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            t : in  STD_LOGIC;
-           q : inout  STD_LOGIC);
+           q : out  STD_LOGIC;
+			  not_q : out  STD_LOGIC);
 end tff;
 
 architecture Behavioral of tff is
@@ -41,12 +42,15 @@ architecture Behavioral of tff is
 begin
 	
 	process (clock, reset)
+	variable tmp: std_logic;
 	begin
 		if reset = '0' then
-			q <= '0';
+			tmp := '0';
 		elsif (rising_edge(clock)) then
-			q <= t xor q;
-		end if;		
+			tmp := t xor tmp;
+		end if;
+		q <= tmp;
+		not_q <= not tmp;
 	end process;
 
 end Behavioral;

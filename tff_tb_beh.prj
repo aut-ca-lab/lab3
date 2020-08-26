@@ -1,2 +1,0 @@
-vhdl work "src/tff.vhd"
-vhdl work "tests/tff_tb.vhd"

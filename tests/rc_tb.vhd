@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   00:25:28 08/27/2020
+-- Create Date:   01:25:30 08/27/2020
 -- Design Name:   
--- Module Name:   E:/Computer Architecture/L3/tests/tff_tb.vhd
+-- Module Name:   E:/Computer Architecture/L3/tests/rc_tb.vhd
 -- Project Name:  L3
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: tff
+-- VHDL Test Bench Created by ISE for module: ripple_counter
 -- 
 -- Dependencies:
 -- 
@@ -28,25 +28,23 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 use std.env.finish;
-
+ 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tff_tb IS
-END tff_tb;
+ENTITY rc_tb IS
+END rc_tb;
  
-ARCHITECTURE behavior OF tff_tb IS 
+ARCHITECTURE behavior OF rc_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT tff
+    COMPONENT ripple_counter
     PORT(
          clock : IN  std_logic;
          reset : IN  std_logic;
-         t : IN  std_logic;
-         q : OUT  std_logic;
-			not_q : OUT  std_logic
+         q : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
@@ -54,11 +52,9 @@ ARCHITECTURE behavior OF tff_tb IS
    --Inputs
    signal clock : std_logic := '0';
    signal reset : std_logic := '0';
-   signal t : std_logic := '0';
 
  	--Outputs
-   signal q : std_logic;
-	signal not_q : std_logic;
+   signal q : std_logic_vector(3 downto 0);
 
    -- Clock period definitions
    constant clock_period : time := 10 ns;
@@ -66,15 +62,13 @@ ARCHITECTURE behavior OF tff_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: tff PORT MAP (
+   uut: ripple_counter PORT MAP (
           clock => clock,
           reset => reset,
-          t => t,
-          q => q,
-			 not_q => not_q
+          q => q
         );
-		 
-	-- Clock process definitions
+
+   -- Clock process definitions
    clock_process :process
    begin
 		clock <= '0';
@@ -82,30 +76,16 @@ BEGIN
 		clock <= '1';
 		wait for clock_period/2;
    end process;
+ 
 
    -- Stimulus process
    stim_proc: process
-   begin	
-		-- hold reset state for 15 ns.
-      wait for 12 ns;	
+   begin		
+      -- hold reset state for 12 ns.
+      wait for 12 ns;
 		reset <= '1';
-		
-		wait for 20 ns;
-		t <= '1';
-		
-		wait for clock_period*4;
-		t <= '0';
-		
-		wait for 20 ns;
-		t <= '1';
-		
-		wait for 10ns;
-		reset <= '0';
-		
-		wait for 10ns;
-		reset <= '1';
-		
-      wait for clock_period*2;
+
+      wait for clock_period*18;
 
       finish;
    end process;
