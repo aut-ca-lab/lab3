@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Computer Architecture/L3/tff.xst" -ofn "E:/Computer Architecture/L3/tff.syr" 

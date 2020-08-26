@@ -1,0 +1,6 @@
+V3 3
+FL "E:/Computer Architecture/L3/src/tff.vhd" 2020/08/27.00:28:13 P.20131013
+EN work/tff 1598471908 FL "E:/Computer Architecture/L3/src/tff.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/tff/Behavioral 1598471909 \
+      FL "E:/Computer Architecture/L3/src/tff.vhd" EN work/tff 1598471908

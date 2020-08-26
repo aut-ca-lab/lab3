@@ -1,0 +1,2 @@
+vhdl isim_temp "src/tff.vhd"
+vhdl isim_temp "tests/tff_tb.vhd"
