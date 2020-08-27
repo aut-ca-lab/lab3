@@ -1,21 +1,22 @@
-Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Computer Architecture/lab3/q3_moore_tb_isim_beh.exe -prj E:/Computer Architecture/lab3/q3_moore_tb_beh.prj work.q3_moore_tb 
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Computer Architecture/lab3/q4_tb_isim_beh.exe -prj E:/Computer Architecture/lab3/q4_tb_beh.prj work.q4_tb 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "E:/Computer Architecture/lab3/src/q3_moore.vhd" into library work
-Parsing VHDL file "E:/Computer Architecture/lab3/tests/q3_moore_tb.vhd" into library work
+Parsing VHDL file "E:/Computer Architecture/lab3/src/q4.vhd" into library work
+Parsing VHDL file "E:/Computer Architecture/lab3/tests/q4_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 160796 KB
-Fuse CPU Usage: 718 ms
+Fuse CPU Usage: 671 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package env
-Compiling architecture behavioral of entity q3_moore [q3_moore_default]
-Compiling architecture behavior of entity q3_moore_tb
+Compiling architecture behavioral of entity q4 [q4_default]
+Compiling architecture behavior of entity q4_tb
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable E:/Computer Architecture/lab3/q3_moore_tb_isim_beh.exe
-Fuse Memory Usage: 174848 KB
-Fuse CPU Usage: 842 ms
+Built simulation executable E:/Computer Architecture/lab3/q4_tb_isim_beh.exe
+Fuse Memory Usage: 173824 KB
+Fuse CPU Usage: 812 ms

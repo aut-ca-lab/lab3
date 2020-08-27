@@ -1,2 +1,0 @@
-vhdl work "src/q3_moore.vhd"
-vhdl work "tests/q3_moore_tb.vhd"

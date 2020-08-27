@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "E:/Computer Architecture/lab3/q3_moore_tb_isim_beh.exe" -prj "E:/Computer Architecture/lab3/q3_moore_tb_beh.prj" "work.q3_moore_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "E:/Computer Architecture/lab3/q4_tb_isim_beh.exe" -prj "E:/Computer Architecture/lab3/q4_tb_beh.prj" "work.q4_tb" 

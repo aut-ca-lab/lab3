@@ -1,5 +1,5 @@
 ISim log file
-Running: E:\Computer Architecture\lab3\q3_moore_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Computer Architecture/lab3/q3_moore_tb_isim_beh.wdb 
+Running: E:\Computer Architecture\lab3\q4_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Computer Architecture/lab3/q4_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -11,7 +11,7 @@ Finished circuit initialization process.
 
 ** Failure:finish
 User(VHDL) Code Called Simulation Stop
-In process q3_moore_tb.vhd:stim_proc 
+In process q4_tb.vhd:stim_proc 
  
 INFO: Simulator is stopped.
 # restart
@@ -21,6 +21,6 @@ Finished circuit initialization process.
 
 ** Failure:finish
 User(VHDL) Code Called Simulation Stop
-In process q3_moore_tb.vhd:stim_proc 
+In process q4_tb.vhd:stim_proc 
  
 INFO: Simulator is stopped.

@@ -1,0 +1,2 @@
+vhdl work "src/q4.vhd"
+vhdl work "tests/q4_tb.vhd"
