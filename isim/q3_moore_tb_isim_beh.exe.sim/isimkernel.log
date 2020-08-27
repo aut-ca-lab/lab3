@@ -2,14 +2,14 @@ Command line:
    q3_moore_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54577
+     -socket  50331
 
-Thu Aug 27 10:41:22 2020
+Thu Aug 27 20:25:01 2020
 
 
- Elaboration Time: 0.46875 sec
+ Elaboration Time: 0.21875 sec
 
- Current Memory Usage: 1361.74 Meg
+ Current Memory Usage: 1356.65 Meg
 
  Total Signals          : 9
  Total Nets             : 5
@@ -32,9 +32,9 @@ In process q3_moore_tb.vhd:stim_proc
  
 
 
- Total Simulation Time: 0.515625 sec
+ Total Simulation Time: 0.34375 sec
 
- Current Memory Usage: 416.559 Meg
+ Current Memory Usage: 1356.76 Meg
 
-Thu Aug 27 10:49:00 2020
+Thu Aug 27 20:25:40 2020
 

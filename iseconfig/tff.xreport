@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-08-27T09:44:25</DateModified>
+  <DateModified>2020-08-27T19:43:51</DateModified>
   <ModuleName>tff</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Computer Architecture/lab3/iseconfig/tff.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Computer Architecture/lab3</ImplementationReportsDirectory>
+  <SavedFilePath>E:/Computer Architecture/L3/iseconfig/tff.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Computer Architecture/L3\</ImplementationReportsDirectory>
   <DateInitialized>2020-08-27T09:44:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/Computer Architecture/lab3/tests/q3_moore_tb.vhd";
+static const char *ng0 = "E:/Computer Architecture/L3/tests/q3_moore_tb.vhd";
 extern char *STD_ENV;
 
 void std_env_sub_2481938653_325555557(char *, char *);

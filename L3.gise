@@ -31,7 +31,6 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="q3_mealy_tb_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="q3_moore_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="q3_moore_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="q4_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="q4_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="q4_tb_isim_beh.wdb"/>
@@ -60,27 +59,21 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598510253" xil_pn:in_ck="-5373067918272171202" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1598510253">
+    <transform xil_pn:end_ts="1598476561" xil_pn:in_ck="1143718027622166826" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1598476561">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="src/dff.vhd"/>
-      <outfile xil_pn:name="src/q3_mealy.vhd"/>
-      <outfile xil_pn:name="src/q3_moore.vhd"/>
-      <outfile xil_pn:name="src/q4.vhd"/>
       <outfile xil_pn:name="src/ripple_counter.vhd"/>
       <outfile xil_pn:name="src/tff.vhd"/>
       <outfile xil_pn:name="tests/dff_tb.vhd"/>
-      <outfile xil_pn:name="tests/q3_mealy_tb.vhd"/>
-      <outfile xil_pn:name="tests/q3_moore_tb.vhd"/>
-      <outfile xil_pn:name="tests/q4_tb.vhd"/>
       <outfile xil_pn:name="tests/rc_tb.vhd"/>
       <outfile xil_pn:name="tests/tff_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1598510253" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-344247837036746736" xil_pn:start_ts="1598510253">
+    <transform xil_pn:end_ts="1598543745" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-344247837036746736" xil_pn:start_ts="1598543745">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598510253" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2342485392953927900" xil_pn:start_ts="1598510253">
+    <transform xil_pn:end_ts="1598543745" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2342485392953927900" xil_pn:start_ts="1598543745">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -88,23 +81,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1598510253" xil_pn:in_ck="-5373067918272171202" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1598510253">
+    <transform xil_pn:end_ts="1598476561" xil_pn:in_ck="1143718027622166826" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1598476561">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="src/dff.vhd"/>
-      <outfile xil_pn:name="src/q3_mealy.vhd"/>
-      <outfile xil_pn:name="src/q3_moore.vhd"/>
-      <outfile xil_pn:name="src/q4.vhd"/>
       <outfile xil_pn:name="src/ripple_counter.vhd"/>
       <outfile xil_pn:name="src/tff.vhd"/>
       <outfile xil_pn:name="tests/dff_tb.vhd"/>
-      <outfile xil_pn:name="tests/q3_mealy_tb.vhd"/>
-      <outfile xil_pn:name="tests/q3_moore_tb.vhd"/>
-      <outfile xil_pn:name="tests/q4_tb.vhd"/>
       <outfile xil_pn:name="tests/rc_tb.vhd"/>
       <outfile xil_pn:name="tests/tff_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1598510257" xil_pn:in_ck="-5373067918272171202" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6081471162755592519" xil_pn:start_ts="1598510253">
+    <transform xil_pn:end_ts="1598543747" xil_pn:in_ck="-5373067918272171202" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6081471162755592519" xil_pn:start_ts="1598543745">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -114,7 +101,7 @@
       <outfile xil_pn:name="q4_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1598510257" xil_pn:in_ck="-8241824064833302959" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6804435768219115628" xil_pn:start_ts="1598510257">
+    <transform xil_pn:end_ts="1598543747" xil_pn:in_ck="-8241824064833302959" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6804435768219115628" xil_pn:start_ts="1598543747">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -153,7 +140,6 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
