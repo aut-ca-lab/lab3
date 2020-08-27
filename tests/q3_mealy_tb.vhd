@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   23:54:31 08/26/2020
+-- Create Date:   10:21:10 08/27/2020
 -- Design Name:   
--- Module Name:   E:/Computer Architecture/L3/tests/dff_tb.vhd
+-- Module Name:   E:/Computer Architecture/lab3/tests/q3_mealy_tb.vhd
 -- Project Name:  L3
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: dff
+-- VHDL Test Bench Created by ISE for module: q3_mealy
 -- 
 -- Dependencies:
 -- 
@@ -33,19 +33,19 @@ use std.env.finish;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY dff_tb IS
-END dff_tb;
+ENTITY q3_mealy_tb IS
+END q3_mealy_tb;
  
-ARCHITECTURE behavior OF dff_tb IS 
+ARCHITECTURE behavior OF q3_mealy_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT dff
+    COMPONENT q3_mealy
     PORT(
          clock : IN  std_logic;
          reset : IN  std_logic;
-         d : IN  std_logic;
-         q : OUT  std_logic
+         x : IN  std_logic;
+         y : OUT  std_logic
         );
     END COMPONENT;
     
@@ -53,10 +53,10 @@ ARCHITECTURE behavior OF dff_tb IS
    --Inputs
    signal clock : std_logic := '0';
    signal reset : std_logic := '0';
-   signal d : std_logic := '0';
+   signal x : std_logic := '0';
 
  	--Outputs
-   signal q : std_logic;
+   signal y : std_logic;
 
    -- Clock period definitions
    constant clock_period : time := 10 ns;
@@ -64,11 +64,11 @@ ARCHITECTURE behavior OF dff_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: dff PORT MAP (
+   uut: q3_mealy PORT MAP (
           clock => clock,
           reset => reset,
-          d => d,
-          q => q
+          x => x,
+          y => y
         );
 
    -- Clock process definitions
@@ -85,23 +85,35 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 12 ns.
-      wait for 12 ns;	
+      wait for 12 ns;
 		reset <= '1';
 		
-		wait for 20 ns;
-		d <= '1';
+		wait for clock_period;
+		x <= '1';
 		
-		wait for 10 ns;
-		d <= '0';
+		wait for clock_period;
+		x <= '1';
 		
-		wait for 20 ns;
-		d <= '1';
+		wait for clock_period;
+		x <= '1';
 		
-		wait for 10ns;
-		reset <= '0';
+		wait for clock_period;
+		x <= '0';
 		
-		wait for 10ns;
-		reset <= '1';
+		wait for clock_period;
+		x <= '1';
+		
+		wait for clock_period;
+		x <= '1';
+		
+		wait for clock_period;
+		x <= '0';
+		
+		wait for clock_period;
+		x <= '1';
+		
+		wait for clock_period;
+		x <= '1';
 		
       wait for clock_period*2;
 

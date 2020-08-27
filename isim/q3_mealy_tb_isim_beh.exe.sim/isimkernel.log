@@ -1,0 +1,40 @@
+Command line:
+   q3_mealy_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54035
+
+Thu Aug 27 10:30:13 2020
+
+
+ Elaboration Time: 0.5 sec
+
+ Current Memory Usage: 1361.74 Meg
+
+ Total Signals          : 9
+ Total Nets             : 5
+ Total Signal Drivers   : 5
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 366
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process q3_mealy_tb.vhd:stim_proc 
+ 
+
+
+** Failure:finish
+User(VHDL) Code Called Simulation Stop
+In process q3_mealy_tb.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 2.17188 sec
+
+ Current Memory Usage: 416.559 Meg
+
+Thu Aug 27 10:32:54 2020
+

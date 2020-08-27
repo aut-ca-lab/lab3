@@ -1,3 +1,0 @@
-vhdl work "src/tff.vhd"
-vhdl work "src/ripple_counter.vhd"
-vhdl work "tests/rc_tb.vhd"

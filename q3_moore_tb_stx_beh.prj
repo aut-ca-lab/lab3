@@ -1,0 +1,2 @@
+vhdl isim_temp "src/q3_moore.vhd"
+vhdl isim_temp "tests/q3_moore_tb.vhd"

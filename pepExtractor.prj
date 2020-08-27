@@ -1,2 +1,1 @@
-work	"src/ripple_counter.vhd"
-work	"src/tff.vhd"
+work	"src/q3_moore.vhd"
